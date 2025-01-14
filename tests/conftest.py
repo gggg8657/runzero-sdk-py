@@ -9,6 +9,14 @@ from pathlib import Path
 from typing import Union
 from uuid import UUID
 
+import sys
+
+# runzero-sdk-py 디렉토리 경로를 sys.path에 추가
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+
+import runzero
+
 import pytest
 import toml
 
